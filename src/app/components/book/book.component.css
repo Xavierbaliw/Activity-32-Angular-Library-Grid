@@ -1,0 +1,54 @@
+.library {
+  padding: 20px;
+  background-color: skyblue; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.library__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.library__grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+.library__item {
+  background-color: white; 
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.library__image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.library__book-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.library__book-author,
+.library__book-genre,
+.library__book-year {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .library__grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (min-width: 1024px) {
+  .library__grid {
+    grid-template-columns: repeat(5, 1fr); 
+  }
+}
